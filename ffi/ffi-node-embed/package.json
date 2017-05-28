@@ -1,0 +1,10 @@
+{
+    "name" : "node-ffi-embed",
+    "version" : "0.0.1",
+    "license" : "MIT",
+    "description" : "Testing call rust in nodejs",
+
+    "dependencies" : {
+        "ffi": ">=0.0.1"
+    }
+}

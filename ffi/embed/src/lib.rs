@@ -1,0 +1,33 @@
+// #![feature(libc)]
+// extern crate libc;
+
+use std::thread;
+// use libc::c_void;
+
+
+#[no_mangle]
+pub extern fn process() {
+    let handlers: Vec<_> = (0..10).map(|_| {
+        thread::spawn(|| {
+            let mut x = 0;
+            for _ in 0..5_000_000 {
+                x += 1
+            }
+
+            x
+        })
+    }).collect();
+
+
+    for h in handlers {
+        println!("Thread finished with count = {}", h.join().map_err(|_| "Could not join a thread!").unwrap());
+    }
+}
+
+/*
+#[no_mangle]
+pub extern fn process()->i32 {
+    println!("proces 1 2 3 4 5 ...");
+    0
+}
+*/
