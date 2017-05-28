@@ -1,2 +1,11 @@
 # rust
-em..... I'm just a student forever.Rust maybe nice choose as new program language.Let me see......
+em..... 
+I'm just the student forever.
+Rust maybe a good choose as new program language.
+Let me see.
+.
+.
+.
+.
+.
+.
