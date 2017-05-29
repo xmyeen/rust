@@ -1,0 +1,6 @@
+[package]
+name = "1_funnction"
+version = "0.1.0"
+authors = ["xmyeen <xmyeen@163.com>"]
+
+[dependencies]
