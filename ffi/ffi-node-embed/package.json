@@ -3,6 +3,7 @@
     "version" : "0.0.1",
     "license" : "MIT",
     "description" : "Testing call rust in nodejs",
+    "homepage" : "https://github.com/xmyeen/rust/tree/master/ffi",
 
     "dependencies" : {
         "ffi": ">=0.0.1"
